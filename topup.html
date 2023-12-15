@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Top-Up Pulsa</title>
+</head>
+<body>
+  <header>
+          <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="image.html">image Ai</a></li>
+                <li><a href="topup.html">Isi pulsa</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+  <div class="container">
+    <h1>Top-Up Pulsa</h1>
+    <form id="topupForm">
+      <label for="nomorHP">Nomor HP:</label>
+      <input type="text" id="nomorHP" name="nomorHP" required>
+
+      <label for="jumlahTopup">Jumlah Top-Up:</label>
+      <input type="number" id="jumlahTopup" name="jumlahTopup" min="1" required>
+
+      <button type="button" onclick="prosesTopUp()">Top-Up Sekarang</button>
+    </form>
+    <div id="hasilTopup"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
